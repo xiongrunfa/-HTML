@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            transform-origin: left bottom;
+        }
+
+        div:hover {
+            /* 里面的参数是数字不跟单位 数字表示 放大为原大小的倍数
+            一个数字是等比例缩放
+            scale的优势：不会影响其他盒子 可以设置缩放中心点 */
+            /* transform: scale(0.5); */
+            /* transform: scale(2,2); */
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    123
+</body>
+
+</html>

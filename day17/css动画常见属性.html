@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(1000px, 0);
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* animation-name: move;
+            animation-duration: 2s; */
+            /* 运动曲线 */
+            /* animation-timing-function: ease; */
+            /* 延迟时间 */
+            /* animation-delay: 1s; */
+            /* 重复次数 */
+            /* animation-iteration-count: infinite; */
+            /* 是否反方向返回 */
+            /* animation-direction: alternate; */
+            /* 停止地点 */
+            /* animation-fill-mode: forwards; */
+
+            /* 属性简写 */
+            /* animation: move 2s linear 1s infinite alternate forwards; */
+            animation: move 2s linear 1s 1 alternate backwards;
+        }
+
+        div:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 给父级盒子添加弹性盒子 */
+            display: flex;
+            width: 800px;
+            height: 350px;
+            background-color: pink;
+            /* 默认的主轴是x轴 那么侧轴就是y轴了 */
+            /* 元素是按照主轴方向排列的 */
+            /* flex-direction: row; */
+            /* 主轴方向是可以改变的 */
+            /* flex-direction: column; */
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            /* align-items: flex-start; */
+        }
+
+        div span {
+            width: 150px;
+            height: 100px;
+            background-color: green;
+            margin: 10px;
+        }
+
+        div span:nth-child(2) {
+            order: -1;
+        }
+
+        div span:nth-child(6) {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+</body>
+
+</html>

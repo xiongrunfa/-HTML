@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            margin: 100px;
+        }
+
+        ul li {
+            float: left;
+            list-style: none;
+            margin: 0 5px;
+            width: 100px;
+            height: 35px;
+            perspective: 400px;
+        }
+
+        .box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all .4s;
+        }
+
+        .box:hover {
+            transform: rotateX(90deg);
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .front {
+            background-color: turquoise;
+            z-index: 1;
+            transform: translateZ(17.5px);
+        }
+
+        .back {
+            background-color: red;
+            /* 当转换有多个效果时 移动的样式必须写在最前面 */
+            transform: translateY(17.5px) rotateX(-90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front">南昌大学</div>
+                <div class="back">我在这里等你</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">南昌大学</div>
+                <div class="back">我在这里等你</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">南昌大学</div>
+                <div class="back">我在这里等你</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">南昌大学</div>
+                <div class="back">我在这里等你</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">南昌大学</div>
+                <div class="back">我在这里等你</div>
+            </div>
+        </li>
+        <li>
+            <div class="box">
+                <div class="front">南昌大学</div>
+                <div class="back">我在这里等你</div>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三角制作</title>
+    <style>
+        .box {
+            position: relative;
+            width: 185px;
+            height: 220px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        span {
+            position: absolute;
+            top: -20px;
+            left: 70px;
+            width: 0;
+            height: 0;
+            /* 为了兼容性 */
+            line-height: 0;
+            font-size: 0;
+            border: 10px solid transparent;
+            border-bottom-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span></span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+        }
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            transform: translate(-50%, -50%);
+        }
+
+        span {
+            /* transform对行内标签无效 */
+            transform: translate(300px, 300px);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+    </div>
+    <span>
+        123
+    </span>
+</body>
+
+</html>

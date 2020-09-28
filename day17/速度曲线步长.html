@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 0;
+            height: 36px;
+            font-size: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            background-color: pink;
+            /* animation: change 2s linear forwards; */
+            animation: change 4s steps(10) forwards;
+        }
+
+        @keyframes change {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>我在南昌大学这里等你</div>
+</body>
+
+</html>

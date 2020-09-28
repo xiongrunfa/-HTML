@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?muv7ob');
+            src: url('fonts/icomoon.eot?muv7ob#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?muv7ob') format('truetype'),
+                url('fonts/icomoon.woff?muv7ob') format('woff'),
+                url('fonts/icomoon.svg?muv7ob#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        div {
+            position: relative;
+            width: 200px;
+            height: 35px;
+            border: 1px solid red;
+        }
+
+        div::before {
+            content: "我是";
+        }
+
+        div::after {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-family: 'icomoon';
+            /* content: ""; */
+            content: "\ea32";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        熊润发
+    </div>
+</body>
+
+</html>

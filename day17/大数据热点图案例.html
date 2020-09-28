@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #111;
+        }
+
+        .map {
+            position: relative;
+            width: 500px;
+            height: 367px;
+            background: url(images/dashuju.jpg) no-repeat;
+            margin: 0 auto;
+        }
+
+        .city {
+            position: absolute;
+            top: 174px;
+            right: 156px;
+        }
+
+        .taiwan {
+            top: 300px;
+            right: 127px;
+        }
+
+        .dotted {
+
+            width: 8px;
+            height: 8px;
+            background-color: green;
+            border-radius: 50%;
+        }
+
+        .city div[class^='pulse'] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            box-shadow: 0 0 12px greenyellow;
+            animation: pulse 1.2s linear infinite;
+        }
+
+        .city div.pulse2 {
+            animation-delay: 0.4s;
+        }
+
+        .city div.pulse3 {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes pulse {
+            0% {}
+
+            70% {
+                width: 25px;
+                height: 25px;
+                opacity: 1;
+            }
+
+            100% {
+                width: 40px;
+                height: 40px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map">
+        <div class="city">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <div class="city taiwan">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

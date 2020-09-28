@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .top {
+            height: 100px;
+            background-color: gray;
+        }
+
+        .banner {
+            width: 900px;
+            height: 220px;
+            background-color: gray;
+            margin: 25px auto;
+        }
+
+        .box {
+            width: 900px;
+            height: 330px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .box ul li {
+            width: 210px;
+            height: 330px;
+            float: left;
+            background-color: gray;
+            margin-right: 20px;
+        }
+
+        .box ul .last {
+            margin-right: 0;
+        }
+
+        .footer {
+            height: 200px;
+            background-color: gray;
+            margin-top: 35px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="box">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="last">4</li>
+        </ul>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>

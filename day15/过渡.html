@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guodu</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 100px;
+            background-color: skyblue;
+            /* transition: 变化的属性 花费时间 运动曲线 何时开始 */
+            /* transition: width 0.8s ease 0.5s; */
+            /* 如果想要写多个属性， 利用逗号进行分割 */
+            /* transition: width 0.8s ease 0.5s, height 0.8s ease 0.5s; */
+            /* 如果想要多个属性都变化，属性写all既可以 */
+            transition: all 0.8s ease 0.5s;
+        }
+
+        .box1:hover {
+            width: 400px;
+            height: 200px;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box2 p {
+            width: calc(100% - 40px);
+            height: calc(100% - 20px);
+            background-color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+        <p></p>
+    </div>
+
+</body>
+
+</html>

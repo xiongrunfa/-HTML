@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <form>
+   <label for="yhm"> 用户名：</label><input type="text" name="username" value="请输入用户名"  id="yhm"   maxlength="10"/> <br>
+    密码： <input type="password" name="pass"  /> <br>
+    性别：<label for="nan">男</label> <input type="radio" name="性别" id="nan"  value="男" checked="checked"/>  
+          <label for="nv">女</label><input type="radio" name="性别"  id="nv"  value="女" /> <br>
+    爱好：吃饭<input type="checkbox" name="hobby" value="吃饭" />
+          睡觉<input type="checkbox" name="hobby" value="睡觉" />
+          打豆豆 <input type="checkbox" name="hobby" value="打豆豆" checked="checked" /><br>
+    籍贯：<select name="jiguan">
+            <option>江西</option>
+            <option>福建</option>
+            <option>湖南</option>
+            <option selected="selected">湖北</option>
+          </select>
+    输入验证码：<input type="text" name="yzm"> <br>
+    <input type="button" value="获取验证码" name="button"> <br>
+    <input type="submit" value="免费注册" name="submit"> &nbsp;&nbsp; &nbsp;&nbsp;
+    <input type="reset" value="重新填写" name="reset"> <br>
+    <input type="file" >
+    </form>
+</body>
+</html>

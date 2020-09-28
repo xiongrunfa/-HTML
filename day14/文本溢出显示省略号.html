@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本溢出显示省略号</title>
+    <style>
+        .danh {
+            width: 250px;
+            height: 60px;
+            background-color: pink;
+            margin: 100px auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+
+        .duoh {
+            width: 250px;
+            height: 64px;
+            background-color: pink;
+            margin: 100px auto;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="danh">胡歌，1982年9月20日出生于上海市徐汇区，中国内地男演员、歌手，民盟盟员。</div>
+    <div class="duoh">胡歌，1982年9月20日出生于上海市徐汇区，中国内地男演员、歌手，民盟盟员。1996年，14岁的胡歌便成为上海教育电视台的小主持人，2005年毕业于上海戏剧学院表演系</div>
+
+</body>
+
+</html>
